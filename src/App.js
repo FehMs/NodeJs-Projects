@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import logoheader from './images/logo.png'
-import {BiUserCircle} from "react-icons/bi";
+import {FiUser} from "react-icons/fi";
+import Banner from './components/Banner'
 
-function reader() {
+function Header() {
   return (
     <div className="header">
       <div className="logoheader">
@@ -16,7 +17,7 @@ function reader() {
       </nav>
       <div className="login-wrapper">
         <div className='icon'>
-          <BiUserCircle size={55}/>
+          <FiUser size={35}/>
         </div>
         <div className='login'>
           <a href=''>Entrar</a>
@@ -24,13 +25,8 @@ function reader() {
         </div>
       </div>
     </div>
-      
   );
 }
-function banner() {
-  <div className='banner'>
-    
-  </div>
-}
 
-export default reader;
+
+export default Header;
